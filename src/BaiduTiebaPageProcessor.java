@@ -5,7 +5,7 @@ import us.codecraft.webmagic.processor.PageProcessor;
 
 public class BaiduTiebaPageProcessor implements PageProcessor {
 
-	// 抓取网站的相关配置 
+	// 抓取网站的相关配置 添加cookie
    private Site site=Site.me().setRetryTimes(3).setSleepTime(1000)
 		   .setDomain("tieba.baidu.com")
 		   .addCookie("BAIDUID","1A97EEDAEF2A0301566ACF077AA10621")
